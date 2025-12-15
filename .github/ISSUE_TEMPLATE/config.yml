@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🤖 Помощь по классификации issue
+    url: https://github.com/Sonya108/supreme-funicular/wiki/Issue-Guide
+    about: Узнайте, как правильно оформлять issues
+  - name: ❓ Вопросы и обсуждения
+    url: https://github.com/Sonya108/supreme-funicular/discussions
+    about: Для вопросов используйте Discussions вместо Issues
