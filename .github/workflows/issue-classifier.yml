@@ -31,6 +31,17 @@ jobs:
             if (/feature|функция|предложение|добавить|хочу/.test(text)) {
               labels.push('type: feature');
             }
+            // КАЧЕСТВО ТОВАРА
+const qualityKeywords = [
+  'качество', 'брак', 'дефект', 'некачествен', 'испорчен',
+  'бракован', 'quality', 'defect', 'broken', 'поврежден',
+  'поломка', 'неисправен', 'трещина', 'царапина', 'сломан',
+  'дефектный', 'бракованный', 'плохой качество'
+];
+if (qualityKeywords.some(word => fullText.includes(word))) {
+  labels.push('качество товара');
+  labels.push('type: bug');
+}
             if (/\?|вопрос|question|how|как|помогите/.test(text)) {
               labels.push('type: question');
             }
